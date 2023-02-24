@@ -4,7 +4,7 @@
 
 <template>
 	<!-- HTML -->
-	<h1>La mia prima app in VUE!</h1>
+	<span>La mia prima app in VUE!</span>
 </template>
 
 <style scoped>

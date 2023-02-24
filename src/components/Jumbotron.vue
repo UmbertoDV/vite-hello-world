@@ -1,68 +1,36 @@
 <script>
-// JS
+import AppTitle from "./AppTitle.vue";
+
+export default {
+	components: {
+		AppTitle,
+	},
+};
 </script>
 
 <template>
 	<!-- HTML -->
-	<header>
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-			<div class="container-fluid">
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-mdb-toggle="collapse"
-					data-mdb-target="#navbarExample01"
-					aria-controls="navbarExample01"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<i class="fas fa-bars"></i>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarExample01">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item active">
-							<a class="nav-link" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- Navbar -->
-
-		<!-- Background image -->
-		<div
-			class="p-5 text-center bg-image"
-			style="
-				background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-				height: 400px;
-			"
-		>
-			<div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-				<div class="d-flex justify-content-center align-items-center h-100">
-					<div class="text-white">
-						<h1 class="mb-3">Heading</h1>
-						<h4 class="mb-3">Subheading</h4>
-						<a class="btn btn-outline-light btn-lg" href="#!" role="button"
-							>Call to action</a
-						>
-					</div>
-				</div>
-			</div>
+	<div class="jumbotron p-5">
+		<div class="container-fluid py-5 text-center">
+			<h1 class="display-5 fw-bold">
+				<AppTitle></AppTitle><br />
+				<h2 class="fw-bold">Con BOOSTRAP!</h2>
+			</h1>
+			<p class="fs-4 text-center">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+				doloribus optio inventore dolor reprehenderit cupiditate quaerat
+				laudantium suscipit officiis quo, nulla ea labore ipsam fuga
+				exercitationem atque. Magnam, ipsa pariatur.
+			</p>
+			<button class="btn btn-danger btn-lg" type="button">
+				Bottone Carino
+			</button>
 		</div>
-		<!-- Background image -->
-	</header>
+	</div>
 </template>
 
 <style scoped>
-/* CSS */
+.jumbotron {
+	background-color: darkcyan;
+}
 </style>

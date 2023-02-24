@@ -12,7 +12,6 @@ export default {
 
 <template>
 	<!-- HTML -->
-	<AppTitle></AppTitle>
 	<Jumbotron></Jumbotron>
 </template>
 
